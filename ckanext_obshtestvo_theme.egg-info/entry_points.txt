@@ -1,0 +1,4 @@
+
+        [ckan.plugins]
+        obshtestvo_theme=ckanext.obshtestvo_theme.plugin:ObshtestvoThemePlugin
+    

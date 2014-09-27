@@ -1,0 +1,269 @@
+@import "compass";
+
+$colorHighlight:#eed767;
+$colorLinkHighlight:#D1A700;
+
+$darkGray:#3c3d3f;
+$colorLinkRed:#981919;
+$colorButtonRed:#6a1212;
+$colorBorderInput:#a98b8b;
+
+$colorButtonInactive:#c7c6c1;
+$colorWhite: #fff;
+$colorBeigeLight: #f7f6f0;
+
+$logoWidth:161px;
+$logoMargin:32px;
+
+body, input, button, select, textarea  {
+  font-family: 'Data Gov','Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: $colorWhite;
+}
+a {
+  color: $colorLinkRed;
+  &:hover {
+    color: $colorLinkHighlight
+  }
+}
+.masthead {
+  @include background-image(linear-gradient($colorWhite, $colorBeigeLight));
+  color: #160101;
+  border-bottom: 1px solid #C9C0A9;
+  .container {
+    padding-bottom: 12px;
+    padding-left: 71px;
+    left:10px;
+    width:915px;
+    background: url('/onelion.png') no-repeat right top;
+  }
+  input[type="text"] {
+    border: 1px solid $colorBorderInput;
+    padding: 6px 10px 5px 10px;
+    margin:0;
+  }
+  .simple-input .field .btn-search {
+    right:7px;
+  }
+  .content {
+    position: relative;
+    top:auto;
+  }
+  hgroup {
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+  hgroup h2 {
+    padding-top: 22px;
+    line-height: 1.1em;
+    font-size: 18px;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    float:none;
+    left:auto;
+    margin-left: $logoWidth+$logoMargin;
+    strong {
+      display: block;
+      font-weight: 900;
+    }
+  }
+  .header-image {
+    overflow: hidden;
+  }
+  .navigation.section {
+    margin-left: $logoWidth+$logoMargin;
+    margin-right: 1px;
+  }
+  .logo {
+    float:left;
+  }
+  .site-search {
+    margin-top: 0; 
+  }
+}
+[role=main], .main, .hero {
+  background: $colorWhite;
+}
+.nav-pills > li {
+  font-size: 15px;
+  & > a {
+    @include border-radius(2px);
+    line-height: 15px;
+    background: $colorButtonInactive;
+    color:#000;
+    margin: 0 1px 0 0;
+    padding: 9px 25px;
+    text-transform: lowercase;
+    .masthead .navigation &:hover {
+      background: $colorHighlight;
+      color: $darkGray;
+    }
+  }
+  .masthead .navigation &.active {
+    a {
+      cursor:default;
+      background: $colorButtonRed;
+      &:hover {
+        color: $colorWhite;
+      }
+    }
+  }
+}
+.account-masthead {
+  background: $darkGray;
+  .account ul li {
+    border-left: 0;
+    a {
+      color: $colorWhite;
+      &:hover {
+        color:$colorWhite;
+        background: $colorButtonRed;
+      }
+    }
+  }
+}
+.wrapper {
+  border:0;
+  @include box-shadow(none);
+  background: none;
+}
+.module-heading {
+  background: #EEEAD8;
+}
+[role=main] .secondary {
+  border: 1px solid #D8D3C0;
+  @include border-radius(3px);
+}
+
+textarea,
+select,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  border-color:$colorBorderInput;
+  &:focus {
+    @include box-shadow(0 0 0 2px rgba($colorButtonRed, 0.85));
+    @include border-radius(0);
+    border-color:$colorButtonRed;
+    outline: none;
+  }
+}
+
+
+.btn-primary {
+  color: $colorWhite;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background: $colorButtonRed;
+  border:none;
+  @include border-radius(2px)
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: $darkGray;
+  text-shadow:none;
+  background: $colorHighlight;
+}
+
+.stages {
+  margin-top: 0;
+  li {
+    &.complete {
+      &:before {
+        color:#6A4E12;
+        background:#F1EEE3;
+      }
+      .highlight {
+        background:#E9E3D5;
+        color:#443D39;
+      }
+      &:after {
+        border-top-color:#E9E3D5;
+        border-bottom-color:#E9E3D5;
+      }
+
+    }
+    &.active {
+      &:before {
+        color:#6a1212;
+      }
+      &:after {
+        color:#6a1212;
+        border-top-color:#6a1212;
+        border-bottom-color:#6a1212;
+      }
+      .highlight {
+        background: #6a1212;
+      }
+    }
+  }
+}
+.site-footer {
+  padding-top: 40px;
+  .container {
+    padding-top: 40px;
+    text-align: center;
+  }
+  &:before {
+    content:"";
+    width:640px;
+    margin:0 auto;
+    border-top: 1px solid #C9C0A9;
+  }
+  background: none;
+  color: #000;
+  label {
+    color: #000;
+    line-height: 30px;
+  }
+  a {
+    color: #000;
+  }
+  .attribution {
+    vertical-align: top;
+    margin-left: 20px;
+    text-align: left;
+    float:none;
+    display: inline-block;
+    width: auto;
+    strong {
+      font-weight: normal;
+    }
+    .ckan-footer-logo {
+      background: url("/ckan-logo-footer.png") no-repeat top left;
+    }
+  }
+  .footer-links {
+    vertical-align: top;
+    text-align: right;
+    display: inline-block;
+    float:none;
+    width: auto;
+    ul {
+      margin-left: 0;
+      &:first-child {
+        float:none;
+      }
+    }
+  }
+}
+.module-content {
+  &, &:first-child, &:last-child {
+    padding-top: 0;
+  }
+}

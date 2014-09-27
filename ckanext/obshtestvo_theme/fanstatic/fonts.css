@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Data Gov';
+    src: url('/font/datagov-regular.eot');
+    src: url('/font/datagov-regular.eot?#iefix') format('embedded-opentype'),
+         url('/font/datagov-regular.woff2') format('woff2'),
+         url('/font/datagov-regular.woff') format('woff'),
+         url('/font/datagov-regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Data Gov';
+    src: url('/font/datagov-bold.eot');
+    src: url('/font/datagov-bold.eot?#iefix') format('embedded-opentype'),
+         url('/font/datagov-bold.woff2') format('woff2'),
+         url('/font/datagov-bold.woff') format('woff'),
+         url('/font/datagov-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Data Gov';
+    src: url('/font/datagov-black.eot');
+    src: url('/font/datagov-black.eot?#iefix') format('embedded-opentype'),
+         url('/font/datagov-black.woff2') format('woff2'),
+         url('/font/datagov-black.woff') format('woff'),
+         url('/font/datagov-black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
