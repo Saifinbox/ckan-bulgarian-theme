@@ -248,16 +248,37 @@ input[type="color"],
       background: url("/ckan-logo-footer.png") no-repeat top left;
     }
   }
+  form {
+    margin-bottom: 10px;
+  }
   .footer-links {
     vertical-align: top;
     text-align: right;
     display: inline-block;
     float:none;
     width: auto;
+    padding-top: 0.3em;
     ul {
+      width:auto;
       margin-left: 0;
       &:first-child {
         float:none;
+      }
+    }
+    .obshtestvo a {
+      display: inline-block;
+      span {
+        display: block;
+        height: 14px;
+        overflow: hidden;
+        img {
+          position: relative;
+        }
+      }
+      &:hover {
+        span img {
+          top:-14px;
+        }
       }
     }
   }

@@ -264,18 +264,37 @@ input[type="color"]:focus,
 .site-footer .attribution .ckan-footer-logo {
   background: url("/ckan-logo-footer.png") no-repeat top left;
 }
+.site-footer form {
+  margin-bottom: 10px;
+}
 .site-footer .footer-links {
   vertical-align: top;
   text-align: right;
   display: inline-block;
   float: none;
   width: auto;
+  padding-top: 0.3em;
 }
 .site-footer .footer-links ul {
+  width: auto;
   margin-left: 0;
 }
 .site-footer .footer-links ul:first-child {
   float: none;
+}
+.site-footer .footer-links .obshtestvo a {
+  display: inline-block;
+}
+.site-footer .footer-links .obshtestvo a span {
+  display: block;
+  height: 14px;
+  overflow: hidden;
+}
+.site-footer .footer-links .obshtestvo a span img {
+  position: relative;
+}
+.site-footer .footer-links .obshtestvo a:hover span img {
+  top: -14px;
 }
 
 .module-content, .module-content:first-child, .module-content:last-child {
