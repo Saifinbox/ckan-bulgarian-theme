@@ -300,5 +300,8 @@ input[type="color"]:focus,
 .module-content, .module-content:first-child, .module-content:last-child {
   padding-top: 0;
 }
+.module-narrow .module-content {
+  margin-top: 10px;
+}
 
 /*# sourceMappingURL=extra.css.map */

@@ -215,6 +215,7 @@ input[type="color"],
 }
 .site-footer {
   padding-top: 40px;
+  padding-bottom: 60px;
   .container {
     padding-top: 40px;
     text-align: center;
@@ -286,5 +287,14 @@ input[type="color"],
 .module-content {
   &, &:first-child, &:last-child {
     padding-top: 0;
+  }
+  .module-narrow & {
+    margin-top: 10px;
+  }
+}
+
+.search-form {
+  .control-order-by select {
+    width:175px;
   }
 }
