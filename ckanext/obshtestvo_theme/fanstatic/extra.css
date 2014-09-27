@@ -1,3 +1,7 @@
+body {
+  min-width: 996px;
+}
+
 body, input, button, select, textarea {
   font-family: 'Data Gov','Helvetica Neue', Helvetica, Arial, sans-serif;
   background: #fff;
@@ -230,6 +234,7 @@ input[type="color"]:focus,
 
 .site-footer {
   padding-top: 40px;
+  padding-bottom: 60px;
   background: none;
   color: #000;
 }
@@ -302,6 +307,13 @@ input[type="color"]:focus,
 }
 .module-narrow .module-content {
   margin-top: 10px;
+}
+.context-info .module-content {
+  padding-top: 15px;
+}
+
+.search-form .control-order-by select {
+  width: 175px;
 }
 
 /*# sourceMappingURL=extra.css.map */

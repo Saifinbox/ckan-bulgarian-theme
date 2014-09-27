@@ -15,6 +15,9 @@ $colorBeigeLight: #f7f6f0;
 $logoWidth:161px;
 $logoMargin:32px;
 
+body {
+  min-width: 996px;
+}
 body, input, button, select, textarea  {
   font-family: 'Data Gov','Helvetica Neue', Helvetica, Arial, sans-serif;
   background: $colorWhite;
@@ -290,6 +293,9 @@ input[type="color"],
   }
   .module-narrow & {
     margin-top: 10px;
+  }
+  .context-info & {
+    padding-top: 15px;
   }
 }
 
