@@ -236,7 +236,7 @@ input[type="color"]:focus,
   padding-top: 40px;
   padding-bottom: 60px;
   background: none;
-  color: #000;
+  color: #3c3d3f;
 }
 .site-footer .container {
   padding-top: 40px;
@@ -249,11 +249,14 @@ input[type="color"]:focus,
   border-top: 1px solid #C9C0A9;
 }
 .site-footer label {
-  color: #000;
+  color: #3c3d3f;
   line-height: 30px;
 }
 .site-footer a {
-  color: #000;
+  color: #3c3d3f;
+}
+.site-footer a:hover {
+  color: #D1A700;
 }
 .site-footer .attribution {
   vertical-align: top;

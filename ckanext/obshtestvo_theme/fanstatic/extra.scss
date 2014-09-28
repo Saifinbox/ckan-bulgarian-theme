@@ -230,13 +230,16 @@ input[type="color"],
     border-top: 1px solid #C9C0A9;
   }
   background: none;
-  color: #000;
+  color: $darkGray;
   label {
-    color: #000;
+    color: $darkGray;
     line-height: 30px;
   }
   a {
-    color: #000;
+    color: $darkGray;
+    &:hover {
+      color:$colorLinkHighlight;
+    }
   }
   .attribution {
     vertical-align: top;
