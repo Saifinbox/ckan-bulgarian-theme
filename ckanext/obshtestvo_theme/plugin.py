@@ -33,7 +33,7 @@ class ObshtestvoThemePlugin(plugins.SingletonPlugin):
         config['pylons.app_globals'].jinja_env.filters['split'] = split
 
     def before_map(self, map):
-        map.connect('home', '/', controller='package', action='search')
+        map.connect('home', '/', controller='organization', action='index')
         return map
 
     def after_map(self, map):
