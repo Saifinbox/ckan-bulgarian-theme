@@ -8,11 +8,11 @@
     <ul class="nav nav-pills clearfix">
       {% block header_site_navigation_tabs %}
         {{ h.build_nav_main(
-          ('search', _('Datasets')),
+          ('search', _('данни')),
           ('organizations_index', _('Organizations')),
-          ('group_index', _('Groups')),
           ('about', _('About'))
         ) }}
+        <li><a href="#">поискай данни</a></li>
       {% endblock %}
     </ul>
   </nav>

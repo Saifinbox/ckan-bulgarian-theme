@@ -319,4 +319,8 @@ input[type="color"]:focus,
   width: 175px;
 }
 
+.module.groups {
+  display: none;
+}
+
 /*# sourceMappingURL=extra.css.map */
