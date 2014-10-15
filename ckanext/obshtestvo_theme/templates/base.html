@@ -1,4 +1,11 @@
 {% ckan_extends %}
+{% block meta %}
+  {{ super() }}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="opendata.government.bg" />
+  <meta property="og:description" content="Демонстрационен портал за отворени данни в република България" />
+  <meta property="og:image" content="https://opendata.government.bg/" />
+{% endblock %}
 
 {% block styles %}
   {{ super() }}
