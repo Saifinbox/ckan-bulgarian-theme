@@ -5,7 +5,7 @@ def split(string, sep, i):
     return string.split(sep)[i]
 
 
-class ObshtestvoThemePlugin(plugins.SingletonPlugin):
+class BulgarianThemePlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.IConfigurable)
     plugins.implements(plugins.IRoutes)
@@ -27,7 +27,7 @@ class ObshtestvoThemePlugin(plugins.SingletonPlugin):
         # (relative to this plugin.py file), and 'example_theme' is the name
         # that we'll use to refer to this fanstatic directory from CKAN
         # templates.
-        toolkit.add_resource('fanstatic', 'obshtestvo_theme')
+        toolkit.add_resource('fanstatic', 'bulgarian_theme')
 
     def configure(self, config):
         config['pylons.app_globals'].jinja_env.filters['split'] = split
