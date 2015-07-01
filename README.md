@@ -12,4 +12,4 @@
 
 Може да използвате следната команда, изпълнена от папката на проекта, за да генерирате автоматично `.css` файлове от променените `'.scss' оригинали:
 
-    compass compile --output-style expanded --sourcemap --no-line-comments --sass-dir ckanext/bulgarian_theme/fanstatic --css-dir ckanext/bulgarian_theme/fanstatic
+    compass compile
