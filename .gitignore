@@ -52,3 +52,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# SASS and Compass CSS preprocessors temp files
+.sass-cache
