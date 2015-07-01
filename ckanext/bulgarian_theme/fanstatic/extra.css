@@ -324,4 +324,10 @@ input[type="color"]:focus,
   display: none;
 }
 
+body .media-heading {
+  word-break: normal;
+  -moz-hyphens: manual;
+  hyphens: manual;
+}
+
 /*# sourceMappingURL=extra.css.map */
