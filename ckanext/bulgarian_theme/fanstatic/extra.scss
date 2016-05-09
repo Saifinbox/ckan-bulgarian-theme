@@ -74,14 +74,13 @@ a {
     overflow: hidden;
   }
   .navigation.section {
-    margin-left: $logoWidth+$logoMargin;
     margin-right: 1px;
   }
   .logo {
     float:left;
   }
   .site-search {
-    margin-top: 0; 
+    margin-top: 0;
   }
 }
 [role=main], .main, .hero {
