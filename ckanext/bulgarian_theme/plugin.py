@@ -33,7 +33,7 @@ class BulgarianThemePlugin(plugins.SingletonPlugin):
         config['pylons.app_globals'].jinja_env.filters['split'] = split
 
     def before_map(self, map):
-        map.connect('home', '/', controller='organization', action='index')
+        map.connect('home', '/', controller='package', action='search')
         return map
 
     def after_map(self, map):
