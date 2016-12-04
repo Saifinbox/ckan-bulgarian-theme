@@ -43,6 +43,7 @@ a {
     border: 1px solid $colorBorderInput;
     padding: 6px 10px 5px 10px;
     margin:0;
+    box-sizing: border-box;
   }
   .simple-input .field .btn-search {
     right:7px;

@@ -35,6 +35,7 @@ a:hover {
   border: 1px solid #a98b8b;
   padding: 6px 10px 5px 10px;
   margin: 0;
+  box-sizing: border-box;
 }
 .masthead .simple-input .field .btn-search {
   right: 7px;
