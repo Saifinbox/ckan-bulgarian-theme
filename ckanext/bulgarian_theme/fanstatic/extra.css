@@ -241,8 +241,8 @@ input[type="color"]:focus,
 }
 .site-footer:before {
   content: "";
-  width: 640px;
-  max-width: 100%;
+  width: 98%;
+  max-width: 640px;
   margin: 0 auto;
   border-top: 1px solid #C9C0A9;
 }
@@ -327,6 +327,15 @@ body .media-heading {
   hyphens: manual;
 }
 
+@media (max-width: 767px) {
+  [role=main] .primary {
+    margin-bottom: 20px;
+  }
+
+  [role=main] .secondary {
+    clear: both;
+  }
+}
 @media (max-width: 640px) {
   .masthead .container {
     padding-left: 20px;
@@ -337,7 +346,7 @@ body .media-heading {
     display: block;
   }
   .masthead hgroup h2 {
-    margin-left: none;
+    margin-left: 0;
   }
 
   .site-footer .footer-links {
