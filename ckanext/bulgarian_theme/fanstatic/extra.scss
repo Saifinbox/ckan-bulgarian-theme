@@ -15,9 +15,6 @@ $colorBeigeLight: #f7f6f0;
 $logoWidth:161px;
 $logoMargin:32px;
 
-body {
-  min-width: 996px;
-}
 body, input, button, select, textarea  {
   font-family: 'Data Gov','Helvetica Neue', Helvetica, Arial, sans-serif;
   background: $colorWhite;
@@ -36,7 +33,7 @@ a {
     padding-bottom: 12px;
     padding-left: 71px;
     left:10px;
-    width:915px;
+    max-width:915px;
     background: url('/onelion.png') no-repeat right top;
   }
   input[type="text"] {
@@ -226,6 +223,7 @@ input[type="color"],
   &:before {
     content:"";
     width:640px;
+    max-width: 100%;
     margin:0 auto;
     border-top: 1px solid #C9C0A9;
   }
@@ -316,4 +314,26 @@ body .media-heading {
   word-break: normal;
   -moz-hyphens: manual;
   hyphens: manual;
+}
+
+@media (max-width: 640px) {
+  .masthead {
+    .container {
+      padding-left: 20px;
+      left: 0;
+    }
+    .logo {
+      float: none;
+      display: block;
+    }
+    hgroup h2 {
+      margin-left: none;
+    }
+  }
+  .site-footer {
+    .footer-links {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+  }
 }
